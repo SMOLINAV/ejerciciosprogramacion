@@ -46,3 +46,102 @@ o = or cuando uno de los dos es verdadero
 + = concatenar
 * = repetir
 '''
+
+# Manipulando datos: conversion de tipos
+'''
+ejemplo cuando quiero dar que "son las " + (13 + 2)
+eso deberia dar error, porque no se puede poner un str con un int
+deberia convertir el int a str
+daria que lo debo poner str(13+2)
+
+ejemplo cuando quiero dar que "son las " + str(13+2)
+iomprimiria = son las 15
+'''
+'''
+tambien se puede converitir cosas a int, por ejemplo
+diciendole que convierta int(3.55546)
+daria 3
+tambien se puede trar un entero de la parte de un str 
+ejemplo
+diciendole que convierta int("3") + 12
+daria 15
+Sacaría error si se tiene str con letras:
+int("D3 5")
+daria error
+'''
+'''
+conviertiendo de int a float
+ejemplo
+float(3)
+daria 3.0
+un str con letras da error
+float("D3 5")
+daria error
+a diferencia de float("3")
+daria 3.0
+'''
+"""
+se puede convertir bool
+bool(0) = false 
+bool("") = false
+bool(1.5) = true
+bool("hola") = true
+se puede convertir los false a true...
+bool("False") = True
+bool("0") = True
+"""
+
+# ALmacenar valores. variables y asignaciones
+'''
+asignar a las variables
+ejemplo 
+llegada = 14 
+precio = 20
+entonces por ejemplo 
+(19 - llegada) * precio = 100
+'''
+
+# Escribiendo en pantalla print
+'''
+ejemplos
+print("hola")
+mensaje = "hola"
+print(mensaje)
+print((3+5)+2)
+calculo = (3+5)+2
+print(calculo)
+'''
+'''
+Expresiones más complejas como:
+episodio = 1
+print("episodio ", episodio, " es la mejor")
+'''
+"""
+ejemplos=
+nombre = "santi"
+edad = 21
+print("soy", nombre, end=" ")
+print("y tengo", edad, "años")
+print("cumplidos")
+"""
+'''
+para cambiar el separador de un print
+ejemplo
+print("hola", "mundo")
+print("hola", "mundo", sep="...")
+daria hola...mundo
+'''
+
+# Recibiendo datos del usuario input
+'''
+ejemplo
+nombre = input("cual es tu nombre? ")
+print("Hola", nombre)
+'''
+'''
+input siempre entrega un str
+pero esto se puede cambiar tranquilamente como 
+int(input("cual es tu edad? "))
+daria 21
+que es tipo int
+'''
